@@ -1,0 +1,9 @@
+dsh-annotate redistributes the following unmodified third-party code inside lib/inject.js:
+
+Full license texts are in THIRD_PARTY_LICENSES/.
+
+- agentation 3.1.2 — https://github.com/benjitaylor/agentation
+  Copyright (c) 2026 Benji Taylor. Licensed under the PolyForm Shield License 1.0.0.
+  This is a source-available license, not an OSI open-source license. The plugin does not modify agentation's source; it bundles the published npm artifact and adds a submit bridge.
+- react 18.3.1 and react-dom 18.3.1 — Copyright (c) Meta Platforms, Inc. and affiliates. MIT License.
+- scheduler 0.23.2 (react-dom dependency) — MIT License.

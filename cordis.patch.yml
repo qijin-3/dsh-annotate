@@ -1,0 +1,16 @@
+# dsh-annotate bundle patch.
+#
+# Inserts the Host row. The client half is declared by dsh.client in
+# package.json and is loaded eagerly, so the browser frame watcher starts at
+# boot without any extra row.
+- insert:
+    - id: dsh-annotate
+      name: dsh-annotate
+      config:
+        # "queue" appends a turn to the current conversation; "steer" interrupts
+        # a running turn. Both stay inside the existing conversation.
+        mode: queue
+        # Extra hostnames that may be annotated besides loopback!  Hostnames are
+        # matched exactly; "*.internal.example" style wildcards are not needed
+        # for the common local dev-server case.
+        hosts: []

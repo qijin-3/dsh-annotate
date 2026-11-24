@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>批注测试页 · 抄书</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 15px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif; color: #25302b; background: #f4f1ea; }
+  .shell { max-width: 880px; margin: 0 auto; padding: 48px 28px 96px; }
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; border-bottom: 1px solid #d8d2c4; padding-bottom: 18px; }
+  h1 { margin: 0; font-size: 26px; letter-spacing: -0.01em; }
+  .sub { color: #7a7468; font-size: 13px; }
+  .grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; margin-top: 28px; }
+  .card { background: #fffdf8; border: 1px solid #e2dccf; border-radius: 12px; padding: 20px; }
+  .card h2 { margin: 0 0 8px; font-size: 16px; }
+  .muted { color: #6d675c; font-size: 13px; }
+  .quote { font-family: Georgia, "Songti SC", serif; font-size: 17px; line-height: 1.9; color: #3a423d; }
+  button.primary { border: 0; border-radius: 8px; padding: 9px 16px; font-size: 14px; background: #b9c9bd; color: #eef3ef; cursor: pointer; }
+  button.primary:hover { background: #a9bdb0; }
+  .row { display: flex; gap: 10px; align-items: center; margin-top: 14px; }
+  .tag { display: inline-block; font-size: 11px; padding: 2px 7px; border-radius: 999px; background: #e7e1d2; color: #6b6458; }
+  .footer { margin-top: 40px; color: #8a8478; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="shell">
+  <header>
+    <div>
+      <h1>抄书 · 今日摘录</h1>
+      <div class="sub">一个用来测试网页批注的普通页面</div>
+    </div>
+    <span class="tag">草稿</span>
+  </header>
+  <div class="grid">
+    <section class="card">
+      <h2>原文</h2>
+      <p class="quote">“设计不是让东西看起来漂亮，而是让它在被使用的时候，恰好是它应该的样子。少一点装饰，多一点判断。”</p>
+      <div class="row">
+        <button class="primary" type="button">保存</button>
+        <span class="muted">上次编辑：3 分钟前</span>
+      </div>
+    </section>
+    <aside class="card">
+      <h2>批注练习</h2>
+      <p class="muted">试试这几个元素：标题、正文、主按钮、标签、卡片边框、提示文字。</p>
+      <p class="muted">点右下角工具条 → 点元素 → 写下要改什么 → Send to Agent。</p>
+      <div class="row"><span class="tag">排版</span><span class="tag">对比度</span><span class="tag">间距</span></div>
+    </aside>
+  </div>
+  <p class="footer">页面只用于验证插件链路，不是真实产品。</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+{
+  "name": "dsh-annotate",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Annotate elements of a page open in DSH's built-in browser and send the feedback into the current conversation.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qijin-3/dsh-annotate.git"
+  },
+  "homepage": "https://github.com/qijin-3/dsh-annotate#readme",
+  "bugs": {
+    "url": "https://github.com/qijin-3/dsh-annotate/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "lib/inject.js",
+    "lib/update.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "src",
+    "scripts",
+    "package.json",
+    "README.md",
+    "NOTICE",
+    "LICENSE",
+    "THIRD_PARTY_LICENSES"
+  ],
+  "scripts": {
+    "build": "node scripts/build-inject.mjs"
+  },
+  "dependencies": {
+    "esbuild": "0.25.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "agentation": "3.1.2"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  }
+}

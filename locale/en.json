@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Page annotate",
+    "description": "Click elements in the built-in browser, add notes, and send the structured feedback straight into the current conversation. Built on agentation without changing its source.",
+    "detail": "docs/DETAIL.md"
+  }
+}

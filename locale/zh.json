@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "网页批注",
+    "description": "在内置浏览器里点选前端元素、写批注，把结构化反馈直接发进当前对话。基于 agentation，不改动它的源码。",
+    "detail": "docs/DETAIL.md"
+  }
+}
